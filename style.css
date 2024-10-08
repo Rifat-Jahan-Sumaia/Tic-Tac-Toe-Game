@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 body {
     background-color: aliceblue;
     text-align: center;
+    padding: 20px auto;
+    font-family: "Open Sans", sans-serif;
 }
-
+main{
+    display: flex;
+}
 #board {
-    background-color: rgb(166, 248, 198);
     margin: 20px auto;
     width: 90%; 
     max-width: 608px; 
@@ -16,20 +21,32 @@ body {
 
 .cell {
     height: 33vw;
-    max-height: 200px;
+    max-height: 180px;
     width: 33vw;
-    max-width: 200px; 
+    max-width: 180px; 
     border: 2px solid black;
     cursor: pointer;
     font-size: 10vw;
-    max-font-size: 150px;
     text-align: center;
-    font-weight: lighter;
     display: flex;
     justify-content: center; 
     align-items: center;
+    background-color: rgb(166, 248, 198);;
 }
 
+#r1c1,#r1c2,#r1c3{
+    border-top: 0px;
+}
+#r3c1,#r3c2,#r3c3{
+    border-bottom: 0px;
+}
+#r1c1,#r2c1,#r3c1{
+    border-left: 0px;
+}
+#r1c3,#r2c3,#r3c3{
+    border-right: 0px;
+}
 .cell:hover {
     background-color: rgb(155, 223, 223);
 }
+
