@@ -47,7 +47,7 @@ function checkForWinner() {
     }
 
     if (roundWon) {
-        alert(Player ${currentPlayer} wins!);
+        alert(`Player ${currentPlayer} wins!`);
         gameActive = false;
         resetGame();
         return;
@@ -75,4 +75,3 @@ function resetGame() {
 cells.forEach(cell => {
     cell.addEventListener('click', handleCellClick);
 });
-
