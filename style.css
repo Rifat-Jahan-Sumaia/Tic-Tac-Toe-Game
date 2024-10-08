@@ -1,0 +1,35 @@
+body {
+    background-color: aliceblue;
+    text-align: center;
+}
+
+#board {
+    background-color: rgb(166, 248, 198);
+    margin: 20px auto;
+    width: 90%; 
+    max-width: 608px; 
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    height: 33vw;
+    max-height: 200px;
+    width: 33vw;
+    max-width: 200px; 
+    border: 2px solid black;
+    cursor: pointer;
+    font-size: 10vw;
+    max-font-size: 150px;
+    text-align: center;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.cell:hover {
+    background-color: rgb(155, 223, 223);
+}
